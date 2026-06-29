@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wainui Motors | Auto Repairs & Servicing Lower Hutt</title>
+    <!-- Meta Descriptions for SEO -->
+    <meta name="description" content="Wainui Motors - Professional auto repairs, tire replacement, and Warrant of Fitness (WOF) in Lower Hutt, New Zealand. Book your service online today!">
+    <meta name="keywords" content="Wainui Motors, Auto Repairs Lower Hutt, WOF Lower Hutt, Tire Repair Lower Hutt, Mechanic Wellington">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo-container">
+                <img src="assets/logo.png" alt="Wainui Motors Logo" class="header-logo">
+                <div class="brand-text">
+                    <span class="brand-title">WAINUI MOTORS</span>
+                    <span class="brand-subtitle">AUTO REPAIRS</span>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><button class="nav-btn active" data-tab="home">Home</button></li>
+                    <li><button class="nav-btn" data-tab="services">Our Services</button></li>
+                    <li><button class="nav-btn" data-tab="booking">Booking</button></li>
+                </ul>
+            </nav>
+
+            <div class="header-contact">
+                <a href="tel:0221563723" class="call-btn">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>022 156 3723</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay">
+        <ul class="mobile-nav-links">
+            <li><button class="mobile-nav-btn active" data-tab="home">Home</button></li>
+            <li><button class="mobile-nav-btn" data-tab="services">Our Services</button></li>
+            <li><button class="mobile-nav-btn" data-tab="booking">Booking</button></li>
+            <li>
+                <a href="tel:0221563723" class="mobile-call-btn">
+                    <i class="fa-solid fa-phone"></i> Call 022 156 3723
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content Area -->
+    <main>
+        
+        <!-- ================= HOME TAB ================= -->
+        <section id="home" class="tab-content active">
+            <!-- Hero Banner -->
+            <div class="hero-section">
+                <div class="hero-overlay"></div>
+                <div class="container hero-container">
+                    <div class="hero-text">
+                        <span class="hero-badge"><i class="fa-solid fa-wrench"></i> Professional Auto Repairs</span>
+                        <h1>Keep Your Vehicle <span class="text-gradient">Running Safe & Smooth</span></h1>
+                        <p>Wainui Motors is your local destination in Lower Hutt for premium automotive repairs, Warrant of Fitness (WOF) checks, and expert tire services.</p>
+                        <div class="hero-cta">
+                            <button class="btn btn-primary btn-lg" onclick="switchTab('booking')">
+                                <i class="fa-regular fa-calendar-check"></i> Book a Service
+                            </button>
+                            <button class="btn btn-secondary btn-lg" onclick="switchTab('services')">
+                                Explore Services
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-graphic">
+                        <div class="glowing-shape-container">
+                            <div class="glowing-shape"></div>
+                            <img src="assets/logo.png" alt="Wainui Motors Logo Large" class="hero-logo-large">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Contacts & Info Section -->
+            <div class="quick-info-section">
+                <div class="container">
+                    <div class="info-grid">
+                        <!-- Card 1: Call Us -->
+                        <a href="tel:0221563723" class="info-card">
+                            <div class="info-icon-wrapper">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <div class="info-card-text">
+                                <h3>Call Us Today</h3>
+                                <p class="highlight-text">022 156 3723</p>
+                                <span class="card-link-hint">Tap to make a call <i class="fa-solid fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- Card 2: Location -->
+                        <a href="https://maps.google.com/?q=14+the+strand,+Lower+Hutt,+New+Zealand,+5014" target="_blank" rel="noopener" class="info-card">
+                            <div class="info-icon-wrapper">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="info-card-text">
+                                <h3>Find Our Workshop</h3>
+                                <p>14 the strand, Lower Hutt, NZ 5014</p>
+                                <span class="card-link-hint">Open in Google Maps <i class="fa-solid fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- Card 3: Social Link -->
+                        <a href="https://www.facebook.com/p/wainui-motors-ltd-61581897955132/" target="_blank" rel="noopener" class="info-card">
+                            <div class="info-icon-wrapper">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div class="info-card-text">
+                                <h3>Follow Our Page</h3>
+                                <p>wainui-motors-ltd</p>
+                                <span class="card-link-hint">Visit Facebook Page <i class="fa-solid fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <div class="about-section container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <h2>Your Trusted <span class="text-gradient">Automotive Specialists</span></h2>
+                        <p class="lead-text">At Wainui Motors, we pride ourselves on providing high-quality, transparent, and efficient auto repair services to the Lower Hutt community.</p>
+                        <p>Whether you require a routine Warrant of Fitness (WOF) check, complex engine diagnostics, brake servicing, or a tire replacement, our experienced mechanics have you covered. We use modern equipment and top-grade replacement parts to guarantee your safety on the road.</p>
+                        
+                        <div class="features-checklist">
+                            <div class="feature-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Experienced & Qualified NZ Mechanics</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Fair, Transparent & Upfront Pricing</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>High-Quality Parts & Modern Equipment</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Fast & Reliable Turnaround Times</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-hours-card">
+                        <div class="card-header">
+                            <i class="fa-regular fa-clock"></i>
+                            <h3>Opening Hours</h3>
+                        </div>
+                        <ul class="hours-list">
+                            <li><span>Monday</span> <span>8:00 AM - 5:00 PM</span></li>
+                            <li><span>Tuesday</span> <span>8:00 AM - 5:00 PM</span></li>
+                            <li><span>Wednesday</span> <span>8:00 AM - 5:00 PM</span></li>
+                            <li><span>Thursday</span> <span>8:00 AM - 5:00 PM</span></li>
+                            <li><span>Friday</span> <span>8:00 AM - 5:00 PM</span></li>
+                            <li><span>Saturday</span> <span>9:00 AM - 1:00 PM</span></li>
+                            <li><span>Sunday</span> <span class="status-closed">Closed</span></li>
+                        </ul>
+                        <div class="card-footer">
+                            <p>Need urgent repairs outside hours? Call us to arrange a key drop-off.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Service Preview -->
+            <div class="services-preview-section">
+                <div class="container">
+                    <div class="section-title-wrapper text-center">
+                        <h2>Our Core <span class="text-gradient">Services</span></h2>
+                        <p>We provide a comprehensive range of automotive repairs and maintenance services.</p>
+                    </div>
+
+                    <div class="preview-grid">
+                        <!-- Service 1: Tires -->
+                        <div class="preview-card">
+                            <div class="preview-icon">
+                                <i class="fa-solid fa-circle-notch"></i>
+                            </div>
+                            <h3>Tires: Repair & Replace</h3>
+                            <p>From simple puncture repairs to brand new tire installations and computerised wheel alignments.</p>
+                            <button class="btn-text" onclick="switchTab('services')">Learn More <i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+
+                        <!-- Service 2: WOF -->
+                        <div class="preview-card highlight">
+                            <div class="preview-badge">Popular</div>
+                            <div class="preview-icon">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <h3>Warrant of Fitness (WOF)</h3>
+                            <p>Fast, comprehensive, and certified safety inspections to keep your vehicle NZTA road legal.</p>
+                            <button class="btn-text" onclick="switchTab('services')">Learn More <i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+
+                        <!-- Service 3: Repairs -->
+                        <div class="preview-card">
+                            <div class="preview-icon">
+                                <i class="fa-solid fa-car-burst"></i>
+                            </div>
+                            <h3>Vehicle Repairs</h3>
+                            <p>Full engine tuning, brake replacement, steering adjustments, suspension work, and auto-electrical repairs.</p>
+                            <button class="btn-text" onclick="switchTab('services')">Learn More <i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= SERVICES TAB ================= -->
+        <section id="services" class="tab-content">
+            <div class="container tab-padding">
+                <div class="section-title-wrapper text-center">
+                    <span class="sub-title">Expert Automotive Solutions</span>
+                    <h2>Services Tailored For <span class="text-gradient">Your Safety</span></h2>
+                    <p class="max-width-600">We offer specialized, high-quality mechanic work. Select a service below to schedule an appointment with our team.</p>
+                </div>
+
+                <!-- Service Row 1: Tire Repair & Replace -->
+                <div class="service-detail-row">
+                    <div class="service-detail-image-wrapper">
+                        <!-- Custom styled premium container instead of placeholder image -->
+                        <div class="service-visual-box tire-visual">
+                            <div class="inner-glow"></div>
+                            <i class="fa-solid fa-circle-notch fa-spin-slow visual-icon"></i>
+                            <div class="visual-badge">Tires</div>
+                        </div>
+                    </div>
+                    <div class="service-detail-content">
+                        <span class="service-num">01</span>
+                        <h2>Tire Repair & Replacement</h2>
+                        <p>Your tires are the only point of contact between your vehicle and the road. We make sure they are in pristine condition to keep you and your family safe under all weather conditions.</p>
+                        
+                        <ul class="service-features-list">
+                            <li><i class="fa-solid fa-check"></i> <strong>New Tire Fitting:</strong> Selection of budget, mid-range, and premium brand tires.</li>
+                            <li><i class="fa-solid fa-check"></i> <strong>Puncture Repairs:</strong> Fast safety-certified repairs to save your tire.</li>
+                            <li><i class="fa-solid fa-check"></i> <strong>Wheel Balancing & Alignment:</strong> Prevents uneven wear and keeps steering straight.</li>
+                            <li><i class="fa-solid fa-check"></i> <strong>Tire Rotation:</strong> Maximizes the lifespan of your current tires.</li>
+                        </ul>
+
+                        <div class="pricing-booking-actions">
+                            <div class="price-indicator">
+                                <span class="price-label">Starting from</span>
+                                <span class="price-value">$35<span class="price-suffix">+</span></span>
+                            </div>
+                            <button class="btn btn-primary" onclick="bookServicePreselected('Tire Repair & Replacement')">
+                                Book Tire Service
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Row 2: Warrant of Fitness (WOF) -->
+                <div class="service-detail-row reverse">
+                    <div class="service-detail-image-wrapper">
+                        <div class="service-visual-box wof-visual">
+                            <div class="inner-glow"></div>
+                            <i class="fa-solid fa-clipboard-check visual-icon"></i>
+                            <div class="visual-badge">WOF</div>
+                        </div>
+                    </div>
+                    <div class="service-detail-content">
+                        <span class="service-num">02</span>
+                        <h2>Warrant of Fitness (WOF)</h2>
+                        <p>Under New Zealand law, vehicles require regular Warrant of Fitness safety checks. Our authorized inspectors perform efficient, comprehensive inspections to ensure all safety standards are met.</p>
+                        
+                        <ul class="service-features-list">
+                            <li><i class="fa-solid fa-check"></i> <strong>NZTA Certified Inspection:</strong> Official safety warrant evaluations.</li>
+                            <li><i class="fa-solid fa-check"></i> <strong>Brakes & Suspension Check:</strong> Critical stopping power assessment.</li>
+                            <li><i class="fa-solid fa-check"></i> <strong>Lights & Visibility:</strong> Checking headlights, indicators, and wipers.</li>
+                            <li><i class="fa-solid fa-check"></i> <strong>WOF Repairs:</strong> Instant fixes and re-testing if your vehicle fails.</li>
+                        </ul>
+
+                        <div class="pricing-booking-actions">
+                            <div class="price-indicator">
+                                <span class="price-label">Inspection rate</span>
+                                <span class="price-value">$65</span>
+                            </div>
+                            <button class="btn btn-primary" onclick="bookServicePreselected('Warrant of Fitness (WOF)')">
+                                Book WOF Inspection
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Row 3: Vehicle Repair -->
+                <div class="service-detail-row">
+                    <div class="service-detail-image-wrapper">
+                        <div class="service-visual-box repair-visual">
+                            <div class="inner-glow"></div>
+                            <i class="fa-solid fa-car-burst visual-icon"></i>
+                            <div class="visual-badge">Repairs</div>
+                        </div>
+                    </div>
+                    <div class="service-detail-content">
+                        <span class="service-num">03</span>
+                        <h2>Vehicle Repair & Diagnostics</h2>
+                        <p>From minor faults to major engine repairs, our technicians use diagnostic scanners to accurately locate problems and fix them using premium quality OEM or aftermarket components.</p>
+                        
+                        <ul class="service-features-list">
+                            <li><i class="fa-solid fa-check"></i> <strong>Brake Servicing:</strong> Pad replacement, rotor machining, and fluid flushes.</li>
+                            <li><i class="fa-solid fa-check"></i> <strong>Engine Diagnostics:</strong> Scanning check engine lights and sensor repairs.</li>
+                            <li><i class="fa-solid fa-check"></i> <strong>Suspension & Steering:</strong> Struts, shocks, CV joints, and ball joints repairs.</li>
+                            <li><i class="fa-solid fa-check"></i> <strong>General Servicing:</strong> Oil changes, filters, spark plugs, and fluid top-ups.</li>
+                        </ul>
+
+                        <div class="pricing-booking-actions">
+                            <div class="price-indicator">
+                                <span class="price-label">Diagnostic estimate</span>
+                                <span class="price-value">$95<span class="price-suffix">/hr</span></span>
+                            </div>
+                            <button class="btn btn-primary" onclick="bookServicePreselected('Vehicle Repair & Diagnostics')">
+                                Book Repairs
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= BOOKING TAB ================= -->
+        <section id="booking" class="tab-content">
+            <div class="container tab-padding">
+                <div class="section-title-wrapper text-center">
+                    <span class="sub-title">Easy Online Scheduling</span>
+                    <h2>Book Your <span class="text-gradient">Service Online</span></h2>
+                    <p class="max-width-600">Select a date, time, and service. We will confirm your appointment via phone/email shortly after submission.</p>
+                </div>
+
+                <div class="booking-layout">
+                    <!-- Left: Booking Form -->
+                    <div class="booking-form-container">
+                        <form id="booking-form" novalidate>
+                            <div class="form-section-title">
+                                <i class="fa-regular fa-user"></i>
+                                <h3>1. Contact Details</h3>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="booking-name">Full Name <span class="required">*</span></label>
+                                    <input type="text" id="booking-name" placeholder="John Doe" required>
+                                    <span class="error-msg">Please enter your name</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="booking-phone">Phone Number <span class="required">*</span></label>
+                                    <input type="tel" id="booking-phone" placeholder="022 156 3723" required>
+                                    <span class="error-msg">Please enter a valid phone number</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-email">Email Address</label>
+                                <input type="email" id="booking-email" placeholder="john.doe@example.com">
+                                <span class="error-msg">Please enter a valid email address</span>
+                            </div>
+
+                            <div class="form-section-title">
+                                <i class="fa-solid fa-car"></i>
+                                <h3>2. Vehicle & Service</h3>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="booking-service">Choose Service <span class="required">*</span></label>
+                                    <select id="booking-service" required>
+                                        <option value="" disabled selected>-- Select a Service --</option>
+                                        <option value="Tire Repair & Replacement">Tire Repair & Replacement</option>
+                                        <option value="Warrant of Fitness (WOF)">Warrant of Fitness (WOF)</option>
+                                        <option value="Vehicle Repair & Diagnostics">Vehicle Repair & Diagnostics</option>
+                                        <option value="General Maintenance / Oil Change">General Maintenance / Oil Change</option>
+                                    </select>
+                                    <span class="error-msg">Please select a service</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="booking-plate">License Plate <span class="required">*</span></label>
+                                    <input type="text" id="booking-plate" placeholder="ABC123" uppercase required>
+                                    <span class="error-msg">Please enter your vehicle plate number</span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="booking-make">Vehicle Make & Model</label>
+                                    <input type="text" id="booking-make" placeholder="e.g. Toyota Corolla 2018">
+                                </div>
+                            </div>
+
+                            <div class="form-section-title">
+                                <i class="fa-regular fa-calendar"></i>
+                                <h3>3. Preferred Date & Time</h3>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="booking-date">Date <span class="required">*</span></label>
+                                    <input type="date" id="booking-date" required>
+                                    <span class="error-msg">Please choose a date</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="booking-time">Time Slot <span class="required">*</span></label>
+                                    <select id="booking-time" required>
+                                        <option value="" disabled selected>-- Select Time Slot --</option>
+                                        <option value="08:00 AM">08:00 AM</option>
+                                        <option value="09:30 AM">09:30 AM</option>
+                                        <option value="11:00 AM">11:00 AM</option>
+                                        <option value="01:30 PM">01:30 PM</option>
+                                        <option value="03:00 PM">03:00 PM</option>
+                                    </select>
+                                    <span class="error-msg">Please choose a preferred time slot</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="booking-notes">Special Instructions or Symptoms</label>
+                                <textarea id="booking-notes" rows="3" placeholder="Describe any specific issues, squeaks, tire sizes, etc."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block btn-lg" id="submit-booking-btn">
+                                <i class="fa-solid fa-circle-check"></i> Submit Booking Request
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Right: Booking Dashboard (localStorage Integration) -->
+                    <div class="booking-dashboard">
+                        <div class="dashboard-header">
+                            <i class="fa-solid fa-list-check"></i>
+                            <h3>Your Submitted Bookings</h3>
+                        </div>
+                        <div class="dashboard-content" id="bookings-list-container">
+                            <!-- Populated dynamically via JS -->
+                            <div class="no-bookings-state">
+                                <i class="fa-regular fa-calendar-xmark"></i>
+                                <p>You have no pending booking requests saved in this browser session.</p>
+                                <p class="small-text">Submit the form on the left to schedule your repair.</p>
+                            </div>
+                        </div>
+                        <div class="dashboard-notes">
+                            <p><i class="fa-solid fa-circle-info"></i> Wainui Motors will contact you to confirm the booking within 1 business hour. For immediate emergency help, please call us directly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Success Modal -->
+    <div class="modal-backdrop" id="success-modal">
+        <div class="success-modal">
+            <div class="modal-icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h2>Booking Submitted!</h2>
+            <p>Thank you <strong id="modal-client-name"></strong>. Your booking request has been recorded successfully.</p>
+            
+            <div class="modal-details-card">
+                <p><strong>Booking Ref:</strong> <span id="modal-ref-num" class="code-font"></span></p>
+                <p><strong>Service:</strong> <span id="modal-service"></span></p>
+                <p><strong>Date/Time:</strong> <span id="modal-date-time"></span></p>
+                <p><strong>Plate:</strong> <span id="modal-plate" class="code-font"></span></p>
+            </div>
+            
+            <p class="modal-disclaimer">We will call or email you shortly to confirm this appointment. If you need to make changes, please refer to the dashboard or call us.</p>
+            <button class="btn btn-primary" onclick="closeSuccessModal()">Got It, Thanks!</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <!-- Col 1: About & Logo -->
+            <div class="footer-col col-brand">
+                <div class="footer-logo-container">
+                    <img src="assets/logo.png" alt="Wainui Motors Logo" class="footer-logo">
+                    <div class="brand-text">
+                        <span class="brand-title">WAINUI MOTORS</span>
+                        <span class="brand-subtitle">AUTO REPAIRS</span>
+                    </div>
+                </div>
+                <p class="footer-desc">Providing high-standard vehicle servicing, tire fitting, and Warrant of Fitness inspections. Drive safe, drive with confidence.</p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/p/wainui-motors-ltd-61581897955132/" target="_blank" rel="noopener" aria-label="Facebook Page">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Col 2: Services Quick Links -->
+            <div class="footer-col">
+                <h3>Our Services</h3>
+                <ul class="footer-links">
+                    <li><button onclick="switchTab('services')">Tire Repairs & Replace</button></li>
+                    <li><button onclick="switchTab('services')">Warrant of Fitness (WOF)</button></li>
+                    <li><button onclick="switchTab('services')">Vehicle Diagnostics</button></li>
+                    <li><button onclick="switchTab('services')">Brakes & Suspension</button></li>
+                    <li><button onclick="switchTab('services')">Oil & Filter Servicing</button></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Contact & Address -->
+            <div class="footer-col">
+                <h3>Contact Details</h3>
+                <ul class="footer-contact-info">
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:0221563723">022 156 3723</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="https://maps.google.com/?q=14+the+strand,+Lower+Hutt,+New+Zealand,+5014" target="_blank" rel="noopener">
+                            14 the strand, Lower Hutt, New Zealand, 5014
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-envelope"></i>
+                        <a href="mailto:info@wainuimotors.co.nz">info@wainuimotors.co.nz</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Map Embed -->
+            <div class="footer-col col-map">
+                <h3>Find Us On Map</h3>
+                <div class="map-container">
+                    <!-- Standard responsive Google Maps Iframe of 14 the Strand, Lower Hutt -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2999.7891823797683!2d174.90481237728795!3d-41.21541437132179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d40cba22fb7ec45%3A0xcb135bc6c1e956fe!2s14%20The%20Strand%2C%20Wainuiomata%2C%20Lower%20Hutt%205014!5e0!3m2!1sen!2snz!4v1719700000000!5m2!1sen!2snz" 
+                        width="100%" 
+                        height="150" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Wainui Motors Map Location">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom text-center">
+            <div class="container">
+                <p>&copy; 2026 Wainui Motors Ltd. All Rights Reserved. Designed for premium automotive service.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
